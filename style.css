@@ -1,0 +1,75 @@
+:root {
+  --black: #2D2D2D;
+  --white: #FFFFFF;
+  --blue: #0075C2;
+  --light-blue: #E2F7FF;
+  --gray1: #828282;
+  --gray2: #E5E5E5;
+}
+
+*,
+*:before,
+*:after {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Helvetica Neue",
+    Arial, sans-serif;
+  font-size: 10px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background: var(--white);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+p,
+a {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.0;
+  color: var(--black);
+}
+
+.edit {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  padding: 80px 4vw 80px 0;
+  z-index: 100;
+  background: #e5e5e5;
+}
+
+.face__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.face__item {
+  display: flex;
+  flex-direction: column;
+}
+.face__item:not(:nth-child(3n)) {
+  margin: 0 2vw 2vw 0;
+}
+.face__item-img {
+  width: 14vw;
+  height: 14vw;
+  background: #FFFFFF;
+}
+.select {
+  margin-top: 8px;
+}

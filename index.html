@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three.js sample</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="display">
+      <canvas id="myCanvas" class="my-canvas"></canvas>
+    </div>
+    <div class="edit">
+      <form>
+        <input id="input-file" type="file">
+        <input type="submit">
+      </form>
+      <form class="face__container" id="faces">
+        <div class="face__item">
+          <img class="face__item-img" id="preview-1">
+          <input class="face__item-input" id="select1" name="number" type="radio" value="1" checked>
+        </div>
+        <div class="face__item">
+          <img class="face__item-img" id="preview-2">
+          <input class="face__item-input" id="select2" name="number" type="radio" value="2">
+        </div>
+        <div class="face__item">
+          <img class="face__item-img" id="preview-3">
+          <input class="face__item-input" id="select3" name="number" type="radio" value="3">
+        </div>
+        <div class="face__item">
+          <img class="face__item-img" id="preview-4">
+          <input class="face__item-input" id="select4" name="number" type="radio" value="4">
+        </div>
+        <div class="face__item">
+          <img class="face__item-img" id="preview-5">
+          <input class="face__item-input" id="select5" name="number" type="radio" value="5">
+        </div>
+        <div class="face__item">
+          <img class="face__item-img" id="preview-6">
+          <input class="face__item-input" id="select6" name="number" type="radio" value="6">
+        </div>
+      </form>
+    </div>
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script> -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "../node_modules/three/build/three.module.js",
+          "three/addons/": "../node_modules/three/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
